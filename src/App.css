@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style for the form container */
+.form-container {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Style for the label inside form container */
+.input-label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+select {
+  text-align-last: center;
+}
+
+/* Style for radio button container */
+.radio-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for radio buttons */
+input[type="radio"] {
+  margin-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for radio button labels */
+.radio-container label{
+  padding-top: 5px;
 }
+
+/* Style for the submit button */
+.form-container button{
+  background-color: #5DE2E7;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form-container button:hover{
+  background-color: #03FB8C;
+}
+
+/* Validation error message style */
+.validationErr {
+  color: red;
+  margin-bottom: 5px;
+}
+
+
